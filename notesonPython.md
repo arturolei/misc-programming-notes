@@ -8,7 +8,7 @@ There are two ways of getting data:
 
 ### Rule of Thumb: ###
 If no API, you have to scrape-->Etiquette for scraping? API's furnish structured data. 
-*Check to see if they let you. 
+* Check to see if they let you. 
 
 Webscraping most of the time, we can find what we want through HTML, sometimes we can find this through CSS. 
 
@@ -26,7 +26,13 @@ BeautifulSoup(src, 'lxml'), src exq
 **DO NOT FORGET** time.sleep(x) where x is positive integer. **DO NOT FORGET TO SLEEP** or given Python speed, you could get blocked by the server (constantly pulling data)
 
 Please take a timestamp photo
--If you do scraping, write code to create a text so that you have all the original data... 
--You never want to scrape things twice or multiple times because you forgot to do something the first time around. Better to have than not have. 
+- If you do scraping, write code to create a text so that you have all the original data... 
+- You never want to scrape things twice or multiple times because you forgot to do something the first time around. Better to have than not have. 
 
-## 
+## Python Fundamentals, 2 May 2017 ##
+
+[Here are the notes for this course.](https://github.com/dlab-berkeley/python-fundamentals/blob/master/Day_1/00_Intro.md)
+
+A definition of programming: knowing how to program and programming languages could perhaps be considered as *different things*. 
+* Most programmers know how to program in more than one language, but it's because they know *how to program*. Concepts are universal. Everything else is a matter of 
+syntax
