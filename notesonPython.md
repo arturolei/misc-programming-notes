@@ -83,6 +83,9 @@ syntax.
  - dir() returns a list of the variables
 
  **An Interesting Case Study of Variable Assignment:**
+ 
+ _NB: Variables only change value when something is assigned to them._
+ 
  ```Python
 lowest = 1.0
 highest = 3.0
@@ -117,8 +120,28 @@ print (position) #Position should retain initial assignment value.
  - Kernel-->"Restart and clear output", FILE--> "Close and halt"
  - You can also save a checkpoint. So if you #@#@ up you can go back later. 
 
+### Python Data Types ###
+
+#### Types Trivia: Every value has a type. #####
+- Every value has a specific type.
+- You can use type(var) function to determine type. Yup. 
+- Types control what we can do with variables, you can add strings but not subtract them. You can multiply them. 
+- You can add floats and integers, but you will produce a float. So 9.0 * 2 = 18.0 NOT 18.00
+
+**Some Cool Functions**
+- int(), str() for quick conversion of data types.
+- len() gives you length. 
 
 
+** Some Highlights from the Challenges **
+```Python
+#You cannot int a string that is a float. You need to float then string.
+print("fractional string to int:", int(float("3.4"))) 
+
+#Division of integers produces a float it seems. Multiplication of integers does not. I wonder why. 
+print(8/5)
+type(8/5)
+```
 
 
 
