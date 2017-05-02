@@ -63,30 +63,56 @@ syntax.
  ##### Jupyter Notebook ####
  Jupyter Nteobook is included in the Anaconda distribution. Notebook files have the extension. "ipynb"
  
- ###### Why Juypter? ######
+ ###### Why Jupyter? ######
  * Jupyter Notebook lets you run chunks of codes in blocks as you wish as well as tab completion. 
  * You can write comments in handy dandy markdown. 
 
- Tips:
+ **Jupyter Tips and Trivia:**
  * You can press CTRL+ ENTER or CMD+ ENTER will run cell 
  * ln [ ], empty brackets mean that we did not run stuff. 
  * You can merge or split cells/blocks of code as you see fit. 
  * Markdown is a lightweight markup language. It can be easily converted to HTMl. Here is a [markdown cheatsheet.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
- By default, Juypter notebook will think you are writing a code cell. You need to click the code segment and change it to Markdown.
-
- *Variables persist between cells.*
+ * By default, Juypter notebook will think you are writing a code cell. You need to click the code segment and change it to Markdown.
+ * Variables persist between cells.
 
  **Python Tips and Trivia**
  - Variables must be created before they are used.
  - Python is case-sensitive. 
- - In Python 3.X, Print() you can string together arguments given to the print function by using commas. 
- - 
+ - In Python 3.X, Print() you can string together arguments given to the print function by using commas and the default element between parameters is a space.
+ - Use meaningful variable names. Please review the conventions for doing this. 
+ - dir() returns a list of the variables
+
+ **An Interesting Case Study of Variable Assignment:**
+ ```Python
+lowest = 1.0
+highest = 3.0
+temp = lowest
+lowest = highest
+highest = temp #temp still retains the initial assignment value of 1.0.
+
+print (highest) #This should give us 1.0
 
 
+#This is a similar situation:
+initial = "left"
+position = initial
+initial = "right"
+
+print (position) #Position should retain initial assignment value. 
+ ```
+
+### Keypoints (According to them), Part 2 of Day 1 ###
+
+1. "Use variables to store values."
+2. "Use `print` to display values."
+3. "Variables persist between cells."
+4. "Variables must be created before they are used."
+5. "Python is case-sensitive."
+6. "Variables can be used in calculations."
+7. "Use meaningful variable names."
 
  
- *Leaving Jupyter*
+ **Leaving Jupyter**
  - You can quit by going from File-->"Close and halt", CTRL+ C, then Y to quit in the console.
  - Kernel-->"Restart and clear output", FILE--> "Close and halt"
  - You can also save a checkpoint. So if you #@#@ up you can go back later. 
