@@ -142,7 +142,25 @@ print("fractional string to int:", int(float("3.4")))
 print(8/5)
 type(8/5)
 ```
+### Strings ###
 
+**Keypoints on Strings**
+- You can add/concatenate strings with +
+- You can get strings to repeat with *
+- Indexing starts at zero. 
+- Slicing [start: end-1] or in old timey math notation, [start, end_index_val)
 
+**Strings have methods:*
+NB: In ipython, you can use tab completion following '.' to see what methods an object has. Yipee skipee.
+-ipython also lets you append a '?' 
+-Calling certain string methods does not change value of the original string-->REASSIGN if you want to change the original string. 
 
+```Python
+print(str(2).upper()) #Python likes this but does not change anything, as youu cannot uppercase a number.
+```
+
+**Closing Comments on Strings**
+- Some mathematical operators can be used on strings
+- Strings can be indexed, Python indexing always starts at 0!
+- Strings, and other types, have their own methods, which are called using dots after the variable, and then the method name.
 
