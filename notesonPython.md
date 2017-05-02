@@ -6,7 +6,7 @@ There are two ways of getting data:
 2. API (Application Programming Interface)--->Get structured data back, JSON--->Please see if there's an API
   *API data access might be limited
 
-##Rule of Thumb:##
+### Rule of Thumb: ###
 If no API, you have to scrape-->Etiquette for scraping? API's furnish structured data. 
 *Check to see if they let you. 
 
@@ -23,6 +23,10 @@ JS Problem-->Some sites do not populate elements until things happy.
 
 BeautifulSoup(src, 'lxml'), src exq
 
-*DO NOT FORGET* time.sleep(x) where x is positive integer. *DO NOT FORGET TO SLEEP* or given Python speed, you could get blocked by the server (constantly pulling data)
+**DO NOT FORGET** time.sleep(x) where x is positive integer. **DO NOT FORGET TO SLEEP** or given Python speed, you could get blocked by the server (constantly pulling data)
 
-Please take a timestamp photo-->If you do scraping, write code to create a text so that you have all the original data... -->You never want to scrape things twice or multiple times. 
+Please take a timestamp photo
+-If you do scraping, write code to create a text so that you have all the original data... 
+-You never want to scrape things twice or multiple times because you forgot to do something the first time around. Better to have than not have. 
+
+## 
