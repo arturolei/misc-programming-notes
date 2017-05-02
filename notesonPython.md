@@ -33,6 +33,49 @@ Please take a timestamp photo
 
 [Here are the notes for this course.](https://github.com/dlab-berkeley/python-fundamentals/blob/master/Day_1/00_Intro.md)
 
-A definition of programming: knowing how to program and programming languages could perhaps be considered as *different things*. 
+#### A definition of programming: #### knowing how to program and programming languages could perhaps be considered as *different things*. 
 * Most programmers know how to program in more than one language, but it's because they know *how to program*. Concepts are universal. Everything else is a matter of 
-syntax
+syntax.
+* What language you should you learn? It depends on what you are trying to accomplish.  
+
+#### What is programming like? ####
+* Most of your time will be spent de-bugging (StackOverflow is spice. Spice is life.)
+* Most of your time will be spent reading documentation and attempting to decipher it. 
+* Most of your time will be spent googling errors. 
+* Most of your time will be spent writing print statements. 
+
+### Running Python ###
+
+#### Running Python in the shell ####
+
+**Simple Way:** just type 'python' in the shell. This is **interactive mode**.
+  * Probably not the best for trying to write code. 
+
+**Other Simple Way:** Normal Mode
+  *Just type python (prog name).py
+
+**NB: You can tell which version of python you have by typing which python in the console.**
+
+**IDEs and Other Tools**
+- IDEs offer you an integrated development environment where you can compile, interpret, and debug. All nice looking.
+  -You can also manage packages with those. 
+
+ ##### Jupyter Notebook ####
+ Jupyter Nteobook is included in the Anaconda distribution. Notebook files have the extension. "ipynb"
+ 
+ ###### Why Juypter? ######
+ * Jupyter Notebook lets you run chunks of codes in blocks as you wish as well as tab completion. 
+ * You can write comments in handy dandy markdown. 
+
+ Tips:
+ * You can press CTRL+ ENTER or CMD+ ENTER will run cell 
+ * ln [ ], empty brackets mean that we did not run stuff. 
+ * You can merge or split cells/blocks of code as you see fit. 
+ * Markdown is a lightweight markup language. It can be easily converted to HTMl. Here is a [markdown cheatsheet.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+ By default, Juypter notebook will think you are writing a code cell. You need to click the code segment. 
+
+
+
+
+
