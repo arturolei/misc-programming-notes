@@ -152,15 +152,20 @@ type(8/5)
 
 **Strings have methods:*
 NB: In ipython, you can use tab completion following '.' to see what methods an object has. Yipee skipee.
--ipython also lets you append a '?' 
+-ipython also lets you append a '?' to a method without parenthesis to get a description of what it does, e.g. str.upper? returns a brief description. 
 -Calling certain string methods does not change value of the original string-->REASSIGN if you want to change the original string. 
+-strip(substring) takes away the last instance.
+-replace(substring_old, substring_new) replaces all instances. 
 
 ```Python
 print(str(2).upper()) #Python likes this but does not change anything, as youu cannot uppercase a number.
 ```
 
+
 **Closing Comments on Strings**
 - Some mathematical operators can be used on strings
 - Strings can be indexed, Python indexing always starts at 0!
 - Strings, and other types, have their own methods, which are called using dots after the variable, and then the method name.
+
+### 
 
