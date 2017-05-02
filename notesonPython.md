@@ -95,7 +95,7 @@ print (highest) #This should give us 1.0
 
 #This is a similar situation:
 initial = "left"
-position = initial
+position = initial #NB: POSITION IS NOT TIED TO INTIAL
 initial = "right"
 
 print (position) #Position should retain initial assignment value. 
