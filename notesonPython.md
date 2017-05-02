@@ -73,7 +73,25 @@ syntax.
  * You can merge or split cells/blocks of code as you see fit. 
  * Markdown is a lightweight markup language. It can be easily converted to HTMl. Here is a [markdown cheatsheet.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
- By default, Juypter notebook will think you are writing a code cell. You need to click the code segment. 
+ By default, Juypter notebook will think you are writing a code cell. You need to click the code segment and change it to Markdown.
+
+ *Variables persist between cells.*
+
+ **Python Tips and Trivia**
+ - Variables must be created before they are used.
+ - Python is case-sensitive. 
+ - In Python 3.X, Print() you can string together arguments given to the print function by using commas. 
+ - 
+
+
+
+ 
+ *Leaving Jupyter*
+ - You can quit by going from File-->"Close and halt", CTRL+ C, then Y to quit in the console.
+ - Kernel-->"Restart and clear output", FILE--> "Close and halt"
+ - You can also save a checkpoint. So if you #@#@ up you can go back later. 
+
+
 
 
 
