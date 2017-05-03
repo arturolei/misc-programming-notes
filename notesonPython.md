@@ -195,3 +195,41 @@ An **object** is a collection of conceptually related grouping of variables (cal
 Read more about objects, classes and methods [here](https://www.jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming)
 
 Check out our Python glossary [here](https://github.com/dlab-berkeley/python-intensive/blob/master/Glossary.md).
+
+## Python Fundamentals, Day 2/3 ##
+
+### Lists ####
+
+Lists are ordered collections of data. Indexing begins at zero. Yadda
+
+You can use slicing notation on lists. 
+```Python
+#Holy cow, this works!
+country_list = ['Surinam', 'Vietnam', 'Denmark', 'Andorra']
+print(country_list[1:3])
+```
+
+Strings are **immutable**! Lists are **mutable** ; they can be changed on the fly.  
+- Changing a list item changes the original list.
+- NB: TO COPY AN ENTIRE LIST-->USE SLICING
+
+**List methods:**
+- del list[3]-->del method deletes element from list. 
+- append(item) is a useful method that lets you append things. 
+- index(value) is useful, returns index for content.
+
+**Slices of Slice: Tidbits**
+- list[start:end (or rather the index before which we stop) :stride/step length]
+- list[::-1] is a good quick formula for reverse a list.
+- list[:] is copying
+
+**Keypoints (cribbed from them)**
+1. A list stores many values in a single structure.
+2. Use an item’s index to fetch it from a list.
+3. Lists’ values can be replaced by assigning to them.
+4. Appending items to a list lengthens it.
+5. Use del to remove items from a list entirely.
+6. The empty list contains no values.
+7. Lists may contain values of different types.
+8. Character strings are immutable.
+9. Indexing beyond the end of the collection is an error.
