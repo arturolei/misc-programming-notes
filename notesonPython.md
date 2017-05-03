@@ -198,7 +198,7 @@ Check out our Python glossary [here](https://github.com/dlab-berkeley/python-int
 
 ## Python Fundamentals, Day 2/3 ##
 
-### Lists ####
+### Lists ###
 
 Lists are ordered collections of data. Indexing begins at zero. Yadda
 
@@ -217,6 +217,9 @@ Strings are **immutable**! Lists are **mutable** ; they can be changed on the fl
 - del list[3]-->del method deletes element from list. 
 - append(item) is a useful method that lets you append things. 
 - index(value) is useful, returns index for content.
+- append vs extend
+  - append takes an item and adds to it, a list added to a list remains a list. 
+  - extend adds an item on the same level; a list extended to list makes the list longer. 
 
 **Slices of Slice: Tidbits**
 - list[start:end (or rather the index before which we stop) :stride/step length]
@@ -233,3 +236,20 @@ Strings are **immutable**! Lists are **mutable** ; they can be changed on the fl
 7. Lists may contain values of different types.
 8. Character strings are immutable.
 9. Indexing beyond the end of the collection is an error.
+
+### Loops ###
+
+For Loops and Loops in general saves the calculations we have to do. 
+
+More or less **for** each thing **in** a collection, python does something. Yay. 
+
+The body of a loop can contain many statements. Loop variables can be called anything we want. 
+
+Python has a built-in function called **range** that produces a sequence of numbers, the numbers are produced on demand (NOT A LIST, it's OWN CLASS, 'range'). 
+- range(N) are the numbers 0.. N-1, keep this in mind if you use the loop variable as an index. 
+- range() iterates of a [sequence](https://github.com/dlab-berkeley/python-fundamentals/blob/master/Glossary.md#sequence) of numbers. 
+
+**The Accumulator Pattern**
+- Common approach in programming is to initialize an accumulator variable, empty string or empty list 
+- Update variable with a collection. 
+
