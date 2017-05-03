@@ -1,4 +1,4 @@
-#Notes on Python (D-Lab Workshops/Seminars)#
+# Notes on Python (D-Lab Workshops/Seminars) #
 
 ## Webscraping with Python, 4/24 and 4/28 ##
 There are two ways of getting data:
