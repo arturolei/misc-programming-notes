@@ -150,12 +150,12 @@ type(8/5)
 - Indexing starts at zero. 
 - Slicing [start: end-1] or in old timey math notation, [start, end_index_val)
 
-**Strings have methods:*
+**Strings have methods:**
 NB: In ipython, you can use tab completion following '.' to see what methods an object has. Yipee skipee.
--ipython also lets you append a '?' to a method without parenthesis to get a description of what it does, e.g. str.upper? returns a brief description. 
--Calling certain string methods does not change value of the original string-->REASSIGN if you want to change the original string. 
--strip(substring) takes away the last instance.
--replace(substring_old, substring_new) replaces all instances. 
+- ipython also lets you append a '?' to a method without parenthesis to get a description of what it does, e.g. str.upper? returns a brief description. 
+- Calling certain string methods does not change value of the original string-->REASSIGN if you want to change the original string. 
+- strip(substring) takes away the last instance.
+- replace(substring_old, substring_new) replaces all instances. 
 
 ```Python
 print(str(2).upper()) #Python likes this but does not change anything, as youu cannot uppercase a number.
@@ -166,6 +166,32 @@ print(str(2).upper()) #Python likes this but does not change anything, as youu c
 - Some mathematical operators can be used on strings
 - Strings can be indexed, Python indexing always starts at 0!
 - Strings, and other types, have their own methods, which are called using dots after the variable, and then the method name.
+- Using a function is "calling it", we "pass arguments" to a function
 
-### 
+### Built-In Functions ###
 
+**Notes on Functions**
+- Functions take arguments
+- There are some built-in functions like max, min, round (this rounds a number to an integer or specified number)
+-Functions may work
+
+## The Jupyter Notebook has two ways to get help.##
+- Place the cursor inside the parenthesis of the function,
+  - Hold down `shift`,
+  - and press `tab`.
+- Or type a function name with a question mark after it.
+
+## Difference between Function, Method, Object ##
+  
+A **function** is a piece of code that is called by name. It can be passed data to operate on (ie. the parameters) and can optionally return data (the return value).
+
+A **method** is a function which is tied to a particular object. Each of an object's methods typically implements one of the things it can do, or one of the questions it can answer. It is called using the dot notation: e.g. `object.method()`. Objects have methods. 
+
+An **object** is a collection of conceptually related grouping of variables (called "members") and functions using those variables (called "methods"). Every [object](https://github.com/dlab-berkeley/python-intensive/blob/master/Glossary.md#object) is an instance of a `class`, which is like a blueprint for an object. 
+
+  - Everything that exists is an object.
+  - Everything that happens is a function call.
+  
+Read more about objects, classes and methods [here](https://www.jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming)
+
+Check out our Python glossary [here](https://github.com/dlab-berkeley/python-intensive/blob/master/Glossary.md).
