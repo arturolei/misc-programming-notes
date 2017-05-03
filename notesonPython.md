@@ -253,3 +253,49 @@ Python has a built-in function called **range** that produces a sequence of numb
 - Common approach in programming is to initialize an accumulator variable, empty string or empty list 
 - Update variable with a collection. 
 
+### Conditionals ###
+
+- An if statemetn (more properly called a conditional statement) controls whether some block of code is executed or not. 
+- Structure is similar to For loop, first line opens with if and ends with a colon, body is indented (4 spaces)
+
+**Keypoints from D-labs**
+1. Use `if` statements to control whether or not a block of code is executed.
+2. Conditionals are often used inside loops.
+3. Use `else` to execute a block of code when an `if` condition is *not* true.
+4. Use `elif` to specify additional tests.
+5. Use boolean operators to make complex statements.
+6. Conditions are tested once, in order.
+
+### Functions ###
+- Functions are the basic building blocks of programming. 
+- Functions are the equivalent of variables for code--->pieces of code, the way variables take string and numbers
+- Functions take arguments or parameters (stuff we want them to process or with which to do magic)
+- Functions are defined and called in seperate lines. 
+
+Functions can return a result, using 'return':
+- print != return
+- may occur anywhere in the function but it terminates the function. 
+- final result default
+
+**An Interesting Case Study: Order of Operations
+```Python
+
+#Why You Call the Function:
+def report(pressure):
+    print('pressure is', pressure)
+    
+print('calling', report, 22.5) #you didn't actually call the function, dumbass!
+
+#Again, call the function or else you get nothing
+result = print_date(1871, 3, 19)
+print('result of call is:', result) 
+
+#using parameter names explicitly to override order:
+
+def print_date(year, month, day):
+    joined = str(year) + '/' + str(month) + '/' + str(day)
+    print(joined)
+
+print_date(day=1, month=2, year=2003) #note that the order of the inputs is wrong, we have to explicitly called parameters. 
+```
+
