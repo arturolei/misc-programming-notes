@@ -458,3 +458,21 @@ Every time we make a change, however small, we should re-run our tests immediate
 ### Outside Resources
 
 If you've tried everything you can think of to logically fix the error and still don't understand what Python is trying to tell you, now the real searching begins. Go to Google and copy/paste the error, you're probably not the only one who has run into it!
+
+### List Comprehensions ###
+Yawn.
+
+### Best Practices ###
+Comment on everything.
+Remember if you forget the Jedi Code, you can always type `import this`  to get what you want back.
+**DOC STRINGS** explain how to use code. Docstrings are '''-'''
+
+**Additional Resources**
+* "Code like a Pythonist" http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html)
+* "Pep Styleguide", https://www.python.org/dev/peps/pep-0008/)
+* "Python Objects", Fredrik Lundh, http://www.effbot.org/zone/python-objects.htm
+* "Python track: python idioms", http://www.cs.caltech.edu/courses/cs11/material/python/misc/python_idioms.html
+* "Be Pythonic", Shalabh Chaturvedi, http://www.cafepy.com/article/be_pythonic/ (PDF version)
+* "Python Idioms", http://www.gungfu.de/facts/wiki/Main/PythonIdioms
+* "The Hitchhiker’s Guide to Python", http://docs.python-guide.org/en/latest/
+* "What is Pythonic?", http://blog.startifact.com/posts/older/what-is-pythonic.html
