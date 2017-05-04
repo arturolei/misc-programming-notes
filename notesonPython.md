@@ -298,4 +298,119 @@ def print_date(year, month, day):
 
 print_date(day=1, month=2, year=2003) #note that the order of the inputs is wrong, we have to explicitly called parameters. 
 ```
+### Scope ###
 
+So, like in JS, variables created in function have a limited place where they can be used... 
+So variables created in function cannot be accessed outside that function. 
+
+Running funcitons on mutable datatypes changes mutable datatypes. It might be important to remember this.
+Here is a brief list of [the mutable and immutable types.](https://codehabitude.com/2013/12/24/python-objects-mutable-vs-immutable/)
+
+positional/keyword arguments:
+- Positional arguments -->be careful of the order in which we put them in
+- Keyword arguments-> default value for certain values can be entered. This is for situations where we have a default value. 
+
+```Python
+def send(message, recipient, cc=None, bcc=None):
+    """ Prints a kind greeting to our input
+    returns nothing"""
+    print(message, recipient)
+    print("CC: ", cc)
+    print("BCC: ", bcc)
+    
+send('Hello','World') #Default value will be none
+send ('Hi', 'Mark', 'Lisa', 'Tommy') #Default value will be something. 
+```
+
+### Dictionary ####
+
+A dictionary is a collection of key-value pairings...  
+dict = {key1: val1, key2: val2}
+
+NB: Dictionaries are indexed by keys. 
+
+Values can be changed but keys cannot be changed.
+
+(dictionary name).keys() returns 
+(dictionary name).values() returns 
+
+```Python
+new_poets_dict = poets_dict
+
+poets_dict["language"] = "Persian"
+print("new dict: ", new_poets_dict["language"])
+
+new_poets_dict["language"] = "Farsi"
+print("first dict: ", poets_dict["language"]) #this will say Farsi, the two are linked. 
+```
+
+**If you need data to be organized AND ordered, USE A LIST not a dictionary.**
+- You index by key with a dicitionary not by some universal indexical value. 
+- You use square brackets with a dictionary. 
+
+You can use "in" to see if a key is in the dictionary.
+```Python
+d = {'apples': 0.49, 'oranges': 0.99, 'pears': 1.49, 'bananas': 0.32}
+
+print('Canada' in l) 
+print('grapefruit' in d)
+print(0.49 in d)
+print('grapefruit' not in d)
+```
+
+**Keypoints**
+- A python dictionary is a collection of key, value pairs.
+- Use dictionary keys to access the values.
+- Once a dictionary has been created, you can change the values of the data and assign new keys.
+- Dictionaries have their own methods, and you can loop through key/value pairs.
+- Dictionaries are different from lists in important ways.
+
+### Files ###
+Okay, now we go to terra incognita for me. 
+
+There's the old read(), open(document name, r)
+-But don't forget close() or else bad things happen?
+
+Then there is the "with open" way.
+- However, use the `with open` syntax and this will automatically close files for you. 
+- The `'r'` indicates that you are reading the file, as opposed to, say, writing to it.
+
+```Python
+# better code
+with open('example.txt', 'r') as my_file:
+    text = my_file.read()
+    
+print(text)
+```
+
+Import csv, csv is common file type. 
+
+Review the Juypter notebook for more details. 
+
+```Python
+```
+
+### Libraries ###
+
+Use `import` to load a library into memory.
+-You must refer to each item with library's name
+  -math.cos(pi)
+
+You can use `from` to import specific things. 
+`from` math `import` cos,pi
+
+You can create an "alias" for a library when importing to shorting programs.
+```Python
+import math as m
+```
+
+To find out stuff about a library, type:
+`help`(name of library)
+- HOWEVER YOU MUST IMPORT LIBRARY FIRST
+
+**Keypoints**
+- "Most of the power of a programming language is in its libraries."
+- "A program must import a [library](https://github.com/dlab-berkeley/python-intensive/blob/master/Glossary.md#library) in order to use it."
+- "Use `help` to find out more about a library's contents."
+- "Import specific items from a library to shorten programs."
+- "Create an alias for a library when importing it to shorten programs."
