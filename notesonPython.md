@@ -404,6 +404,12 @@ You can create an "alias" for a library when importing to shorting programs.
 import math as m
 ```
 
+You can also import everything with the * character:
+```Python
+from math import *
+print(pi)
+```
+
 To find out stuff about a library, type:
 `help`(name of library)
 - HOWEVER YOU MUST IMPORT LIBRARY FIRST
@@ -414,3 +420,41 @@ To find out stuff about a library, type:
 - "Use `help` to find out more about a library's contents."
 - "Import specific items from a library to shorten programs."
 - "Create an alias for a library when importing it to shorten programs."
+
+
+### Errors ###
+Everybody hurts. Everybody makes mistakes. 
+
+Python tells us the **type or category of error**.
+Python reports a **sytax error** when it can't understand a program. Basically, your Python grammar sucks. 
+
+**Traceback** refers to the sequence of errors. They are levels of errors that you can have. 
+
+####FUCKING INDENTATION ERRORS!!!#####
+- Tabs or spaces, be consistent. 
+- four spaces or tabs, be consistent
+
+A copy and past of some things that they advise:
+## Debugging Strategies
+
+### Know what it's supposed to do
+
+The first step in debugging something is to *know what it's supposed to do*. "My program doesn't work" isn't good enough: in order to diagnose and fix problems, we need to be able to tell correct output from incorrect. If we can write a test case for the failing case --- i.e., if we can assert that with *these* inputs, the function should produce *that* result --- then we're ready to start debugging. If we can't, then we need to figure out how we're going to know when we've fixed things.
+
+### Start with a simplified case.
+
+If you're writing a multi-step loop or function, start with one case and get to work. Then ask what you need to do to generalize to many cases.
+
+### Divide and conquer
+
+We want to localize the failure to the smallest possible region of code. The smaller the gap between cause and effect, the easier the connection is to find. Many programmers therefore use a **divide and conquer** strategy to find bugs, i.e., if the output of a function is wrong, they check whether things are OK in the middle, then concentrate on either the first or second half, and so on.
+
+### Change One Thing at a Time, For a Reason
+
+Replacing random chunks of code is unlikely to do much good. (After all, if you got it wrong the first time, you'll probably get it wrong the second and third as well.) Good programmers therefore *change one thing at a time, for a reason*. They are either trying to gather more information ("is the bug still there if we change the order of the loops?") or test a fix ("can we make the bug go away by sorting our data before processing it?").
+
+Every time we make a change, however small, we should re-run our tests immediately, because the more things we change at once, the harder it is to know what's responsible for what.
+
+### Outside Resources
+
+If you've tried everything you can think of to logically fix the error and still don't understand what Python is trying to tell you, now the real searching begins. Go to Google and copy/paste the error, you're probably not the only one who has run into it!
