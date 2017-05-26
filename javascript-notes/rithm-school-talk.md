@@ -197,3 +197,5 @@ class Person{
 }
 }
 ```
+
+typeof Person --> returns function. 
