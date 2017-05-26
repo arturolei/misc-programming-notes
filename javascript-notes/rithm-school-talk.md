@@ -126,7 +126,7 @@ In ES5, they came up with something called "use strict" mode;
 - Let's make things fail loudly instead of silently.  ESLINT, 
 - This should be a default configuration you should set up. 
 
-## ES2015/ES6 ##
+## ES2015/ES6: Let/Const ##
 
 ES6 allowed for two types, const and let.
 
@@ -149,3 +149,51 @@ Some have even gone so far as to allow call for let being used instead of 'var'
 **let** does hoist but does not have access to its declaration, but not initiziaiton, see documentation for more clues. 
 
 -Advise use of ```let``` in loops. 
+
+##ES2016/6: Class##
+
+What's a class? It collects data and functionality. 
+We create copies of that class. 
+
+JS has no notion of class. JS has objects and functions. 
+
+
+You can create a factory function which produces/makes objects. 
+
+```
+function createStudent(first,last){
+	return {
+		first: first,
+		last: last
+	}
+}
+
+function Student(first,last){
+	this.first = first;
+	this.last = last;
+}
+
+Student('Tim', 'Garcia');-->Undefined
+```
+
+However, new Student('Time', 'Garcia'); returns something akin to an object.
+
+What does "new" do?
+1. Creates {}
+2. assign this ={}
+3. return this 
+
+This is not really a class or instance; it's a link. 
+
+See object-oriented programming on the rithm school website. 
+
+To use ```class, we can do this. 
+
+```
+class Person{
+	constructor(first, last){
+	this.first= first;
+	this.last = last;
+}
+}
+```
