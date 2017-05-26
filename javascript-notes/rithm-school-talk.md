@@ -32,7 +32,7 @@ The idea of closure = inner functions that make use of variables defined in oute
 the variable it needs to remember. **This idea is unique to JS**
 - Variables defined in outer functions that are used in inner function even when those outer functions have been returned. 
 
-###So when do we use closure?###
+### So when do we use closure?###
 - In order to write programs in a functional style, we need to use closure. Haskell, React, Redux (combine reducers)
 - Common purpose of using closure-->Maintaining state requires that people don't modify that state, that people don't mess with our code, protecting information or certain bits of information from the outside (similar to the notion of private or public variables.)
 
@@ -72,6 +72,80 @@ Cfr. "module" pattern-->Design pattern common in JS-->Design patterns are univer
 	- Instead of making classroom in global scope, I have made a variable called module. 
 - NB: Libraries often assigned to some module you have made. 
 
--Variant known as revealing modular pattern (all functions in outer function, inner function is something compact)
+- Variant known as revealing modular pattern (all functions in outer function, inner function is something compact, ES2015 allows for more extreme 
+refactoring)
+
+- See "Revealing Module Pattern", for cleaning up code. 
+
+- _Key Thing: Variables defined in outer functions being used inner functions when those outer functions have already been returned._
+  - This leads to a potential "memory leak" problem with private/outer variables accumulating. 
+
+- JS Compiler will perform some sort of garbage collection on its own. 
+
+- Rithm school emphasizes smaller class size and paid developer environment. 
+
+## Hoisting
+
+Variables defined with var keyword lifts variable declaration to the top of its scope. 
+- What is diff between declaration and assignment? 
+	- Declaration creates a space in memory but necessary a value (var thing; creates a variable with 'undefined')
+- Var declaration is lifted to the top of its scope.
+
+``` function sayHi(){
+	var elie;// undefined
+	return elie
+	elie = "Instructor"
+}
+
+sayHi()
+```
+
+Two ways of writing functions in JS:
+1. **function declaration**, just using function keyword.
+	- function() sayHello(){}
+2. function expression, lefthand stuff
+	- We will use var, as in var firstFunction  = function(){return "HI"}
+
+What's the difference? 
+- Hoisting? Function declarations always hoist--> you can call a function before it is defined in the JS document.
+- Function expression, (create a sayHello), hoisting a var. 
+	- Why does this exist if possibly problematic? 
+	- It's really stylistic.
 
 
+The crux of the matter is that we should not freak out if we were to see 
+``` 
+function foo(){
+	var first, last, 
+}
+```
+
+There are lots of bad things you can do in language; it's loosely or dynamically typed. 
+
+In ES5, they came up with something called "use strict" mode; 
+- Let's make things fail loudly instead of silently.  ESLINT, 
+- This should be a default configuration you should set up. 
+
+## ES2015/ES6 ##
+
+ES6 allowed for two types, const and let.
+
+const DOES NOT mean immutability. 
+- const just blocks reassignment. 
+	- const numbers = [1,2, 3, 4]-->You can use push on numbers and add a valable. 
+	- However, you cannot reassign numbers.
+
+- let gives you a new kind of scope. 
+```
+var instructor = "Elie";
+if (instructor == "Elie"){
+	let fact = true;
+}
+fact 
+```
+This returns a Reference error, fact exists only in the scope of the IF statement. 
+Some have even gone so far as to allow call for let being used instead of 'var'
+
+**let** does hoist but does not have access to its declaration, but not initiziaiton, see documentation for more clues. 
+
+-Advise use of ```let``` in loops. 
