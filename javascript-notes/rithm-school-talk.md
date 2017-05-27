@@ -8,7 +8,7 @@ Before the start, the instructor polled the class and asked to know what people 
 	- LET gives us a different issue with hoisting. 
 - It's nice to hear that we're all drinking that "React" Kool-aid
 
-##Closures
+## Closures
 
 **Scope** = things can't be called outside of a domain, variables are limited 
 - Scopes can be created by functions
@@ -82,7 +82,7 @@ refactoring)
 
 - JS Compiler will perform some sort of garbage collection on its own. 
 
-- Rithm school emphasizes smaller class size and paid developer environment. 
+- Rithm school emphasizes smaller class size and paid developer experience, job stuff. 
 
 ## Hoisting
 
