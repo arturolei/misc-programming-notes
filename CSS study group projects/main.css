@@ -1,0 +1,66 @@
+body{
+	font-family:"Lato", sans-serif;
+	color:gray;
+}
+
+
+.header-container{
+	border:1px solid blue;
+	display:flex;
+	justify-content:center;
+}
+
+.header{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	border:5px solid red;
+	justify-content: space-between;
+	width:80%;
+
+}
+
+.top-menu-block{
+	list-style-type: none;
+	display: inline-flex;
+	border: 6px solid purple;
+	justify-content:center;
+	align-items:center;
+
+}
+
+.top-menu-block li{
+	padding:10px;
+}
+
+.logo{
+	align-self: flex-start;
+	border: 6px solid green;
+
+}
+
+.banner{
+	display:flex;
+	background: url(images/banner.png);
+	width:100%;
+	height:500px;
+
+	background-size: cover;
+	justify-content:center;
+	flex-direction:row;
+	align-items:center;
+}
+
+.banner-items{
+	background:blue;
+	padding:20px;
+	color:white;
+	width:20px;
+	height:30px;
+
+}
+
+.startbox{
+
+	text-align:center;
+}
